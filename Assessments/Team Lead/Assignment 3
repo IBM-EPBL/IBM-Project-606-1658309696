@@ -1,0 +1,25 @@
+                         #Program for blinking of LED 
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(3, GPIO.OUT)
+while True:
+    GPIO.output(3, GPIO.HIGH)
+    time.sleep(1)
+    GPIO.output(3, GPIO.LOW)
+    time.sleep(1)
+    
+    
+                         #Program for traffic lights                        
+import RPi.GPIO as GPIO
+import time
+RYG = (2,3,4)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(RYG, GPIO.OUT)
+while True:
+    GPIO.output(RYG, (1,0,0))  #Only red LED is ON    
+    time.sleep(5)
+    GPIO.output(RYG, (0,1,0))  #Only Yellow LED is ON
+    time.sleep(5)
+    GPIO.output(RYG, (0,0,1))  #Only Green LED is ON
+    time.sleep(5)
