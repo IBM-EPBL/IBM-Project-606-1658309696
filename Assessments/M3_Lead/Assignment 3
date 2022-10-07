@@ -20,7 +20,7 @@
   Y=31
   G=33
   GPIO.setup(R, GPIO.OUT)
-  GPIO.setup(G, GPIO.OUT)
+  GPIO.setup(Y, GPIO.OUT)
   GPIO.setup(G, GPIO.OUT)
   while True:
     GPIO.output(R,GPIO.HIGH)
