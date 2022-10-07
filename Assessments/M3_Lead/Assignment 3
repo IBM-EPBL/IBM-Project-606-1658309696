@@ -16,9 +16,7 @@
   import RPi.GPIO as GPIO
   from time import sleep
   GPIO.setmode(GPIO.BOARD)
-  R=29
-  Y=31
-  G=33
+  R,Y,G=29,31,33
   GPIO.setup(R, GPIO.OUT)
   GPIO.setup(Y, GPIO.OUT)
   GPIO.setup(G, GPIO.OUT)
