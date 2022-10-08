@@ -1,0 +1,27 @@
+LED BLINKING
+import RPi.GPIO as GPIO 
+from time import sleep 
+GPIO.setwarnings(False) 
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(8, GPIO.OUT, initial=GPIO.LOW) 
+while True: 
+ GPIO.output(8, GPIO.HIGH) 
+ sleep(1)
+ GPIO.output(8, GPIO.LOW) 
+ sleep(1)
+ 
+ 
+ TRAFFIC LIGHT
+import RPI.GPIO as GPIO
+from time import sleep
+GPIO.setmode(GPIO.BOARD)
+R=11
+Y=13
+G=15
+while True:
+    GPIO.output(11, GPIO.HIGH) 
+    sleep(5) 
+    GPIO.output(13, GPIO.HIGH) 
+    sleep(5) 
+    GPIO.output(15, GPIO.HIGH) 
+    sleep(5) 
